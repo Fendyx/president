@@ -1,0 +1,234 @@
+footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    background: #495057;
+}
+
+.left-footer{
+    position: relative;
+    width: 20%;
+    border-right: 2px solid #393838;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.footer-logo-name{
+    color: white;
+    font-size: 20px;
+    font-family: Monda;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.footer-logo-name img{
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.description-footer{
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    color: #AFADAD;
+}
+
+.middle-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    /* border-right: 2px solid black; */
+}
+.footer-block{
+    position: relative;
+    margin-left: 30px;
+    width: 200px;
+    height: auto;
+    padding: 30px;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+}
+
+.heading{
+    position: relative;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: Monda;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+footer ul{
+    color: #AFADAD;
+    font-size: 16px;
+    font-family: Monda;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+footer ul li{
+    list-style-type: none;
+    margin: 10px 0; /*расстояние между пунктами по высоте*/
+}
+footer ul li a{
+    text-decoration: none;
+    color: #AFADAD;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.right-footer{
+    display: flex;
+    padding: 30px;
+}
+.right-footer label{
+    color: white;
+    font-size: 24px;
+    font-family: Monda;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.right-footer input{
+    height: 35px;
+}
+.right-footer form{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.right-footer form textarea, input{
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #D9D9D9;
+    width: 100%;
+
+    
+}
+
+@media screen and (min-width: 1600px) {
+    footer{
+        height: 800px;
+    }
+    .footer-logo-name img{
+        width: 12%;
+        border-radius: 15px;
+    }
+    .footer-logo-name p{
+        font-size: 2.5rem;
+    }
+    .description-footer{
+        font-size: 1.7rem;
+    }
+    .footer-block{
+        position: relative;
+        margin-left: 30px;
+        width: 15vw;
+        height: auto;
+        padding: 30px;
+        /* border: 2px solid black; */
+        box-sizing: border-box;
+    }
+    .heading{
+        font-size: 2vw;
+    }
+    footer ul{
+        color: #AFADAD;
+        font-size: 1.5vw;
+        font-family: Monda;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .right-footer label{
+        color: white;
+        font-size: 2vw;
+        font-family: Monda;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+    .right-footer input{
+        height: 70px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 850px){
+    footer{
+        display: block;
+        height: 700px;
+        
+    }
+    .left-footer{
+        display: flex;
+        width: 100%;
+        border: unset;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .footer-logo-name img{
+        margin: unset;
+        margin-right: 20px;
+    }
+    .footer-logo-name{
+        display: flex;
+        align-items: center;
+    }
+    .description-footer{
+        display: none;
+    }
+    .middle-footer{
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+    .right-footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: unset;
+        align-items: center;
+    }
+    .right-footer form{
+        display:none;
+    }
+    .right-footer  p{
+        display: inline;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: Monda;
+        font-weight: 400;
+        word-wrap: break-word;
+        margin-bottom: 30px;
+        
+    }
+    .right-footer a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #308FFF;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .description-footer-1{
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 60%;
+        top: 100px;
+        color: #AFADAD;
+    }
+    
+    
+}
+@media screen and (min-width: 850px) {
+    .right-footer p{
+        display: none;
+    }
+    .right-footer a{
+        display: none;
+    }
+    .description-footer-1{
+        display: none;
+    }
+}

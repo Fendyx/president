@@ -1,0 +1,197 @@
+main{
+    width: 100%;
+    height: auto;
+}
+.a-little-bit-about-us-block{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    background: #96ffd2; /* #D1D0D0; */
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.about-org{
+    position: relative;
+    top: 70px;
+    width: 600px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.elipse{
+    position: relative;
+    top: -150px;
+    width: 500px;
+    height: 400px;
+    background: #308FFF;
+    border-radius: 200px;
+    transform: rotate(-55deg);
+}
+.elipse p{
+    position: relative;
+    display: block;
+    width: 400px;
+    top: 180px;
+    transform: rotate(55deg);
+    color: white;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.tournament-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+
+}
+.tournaments{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.image_block{
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+}
+.image_block img{
+    width: 35%;
+}
+.description{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    border-top: 2px solid black;
+    color: black;
+    font-size: 24px;
+    font-family: Monda;
+    font-weight: 700;
+}
+
+.after-750px{
+    display: none;
+}
+@media screen and (min-width: 1441px) and (min-height: 940px){
+    .image_block{
+        position: relative;
+        text-align: center;
+        width: 28vw;
+        border: 4px solid black;
+        height: 30vh;
+    }
+    .description{
+        position: absolute;
+        bottom: 3vh;
+        width: 100%;
+        border-top: 4px solid black;
+        color: black;
+        font-size: 36px;
+        font-family: Monda;
+        font-weight: 700; 
+    }
+    .a-little-bit-about-us-block{
+        align-items: center;
+        height: 500px;
+    }
+    .about-org{
+        top: 0;
+        font-size: 90px;
+        /* border: 2px solid black; */
+        width: 900px;
+    }
+    .elipse{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        transform: rotate(0deg);
+        position: relative;
+        top: 0;
+        width: 40vw;
+        border-radius: 70px;
+    }
+    .elipse p{
+        
+        top: 0;
+        transform: rotate(0deg);
+        font-size: 2.5rem;
+        width: 40vw;
+
+    }
+
+}
+@media screen and (max-width: 750px){
+    .a-little-bit-about-us-block{
+        justify-content:unset;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+    }
+    .elipse{
+        display: none;
+    }
+    .about-org{
+        top: 0;
+        display: block;
+        text-align: center;
+        width: 90%;
+        height: 200px;
+    }
+    .after-750px{
+        position: relative;
+        display: inline-block;
+        width: 95%;
+        height: 300px;
+        font-size: 24px;
+        font-weight: 500;
+        text-align:justify;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        bottom: 10px;
+    }
+    .image_block{
+        width: 50vw;
+        height: 40vw;
+    }
+    .image_block img{
+        width: 35vw;
+    }
+    .image_block .description{
+        height: 10%;
+        font-size: 3vw;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .elipse p{
+        top: 180px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .elipse p{
+        top: 220px;
+        width: 300px;
+        font-size: 16px;
+    }
+    .about-org{
+        font-size: 38px;
+    }
+}
