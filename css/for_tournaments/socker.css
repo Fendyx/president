@@ -26,7 +26,7 @@ main{
     margin-bottom: 50px;
     font-size: 2vw;
 }
-.instruction-content ul{
+.instruction-content ul, p{
     list-style-type:decimal;
     position: relative;
     font-size: 1.7vw;
