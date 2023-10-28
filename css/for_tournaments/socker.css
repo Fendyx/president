@@ -98,5 +98,7 @@ main{
     .instruction-content ul{
         font-size: 3.5vw;
     }
-
+    .instruction-content p{
+        font-size: 3.5vw;
+    }
 }
